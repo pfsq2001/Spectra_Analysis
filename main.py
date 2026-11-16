@@ -704,7 +704,7 @@ def main(page: ft.Page):
                 desvio_padrao_controle_n = 0
             
 
-            limiar = media_fold_controle_n + 0.10 + desvio_padrao_controle_n
+            limiar = (media_fold_controle_n + desvio_padrao_controle_n) * 1.10
 
             print("Média controle negativo:", media_fold_controle_n)
             print("Desvio padrão controle negativo:", desvio_padrao_controle_n)
